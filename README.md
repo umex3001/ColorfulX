@@ -1,3 +1,3 @@
 # ColorfulX
 
-https://c00lman-offic.github.io/ColorfulX/main.html#
+https://c00lman-offic.github.io/ColorfulX/main
