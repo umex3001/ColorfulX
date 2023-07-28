@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Renkli Site</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .button {
+            width: 100px;
+            height: 100px;
+            border: none;
+            border-radius: 10px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .red {
+            background-color: red;
+            color: white;
+        }
+
+        .blue {
+            background-color: blue;
+            color: white;
+        }
+
+        .green {
+            background-color: green;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Renkli Site</h1>
-    </div>
-  </header>
-
-  <div class="container">
-    <section>
-      <h2>Hoş Geldiniz!</h2>
-      <p>Merhaba! Bu renkli siteye hoş geldiniz. Burada kare şeklinde Home ve Download butonlarınız bulunuyor.</p>
-      <div class="buttons">
-        <a href="#" class="button home">Home</a>
-        <a href="#" class="button download">Download</a>
-      </div>
-    </section>
-  </div>
-
-  <footer>
-    <div class="container">
-      <p>Telif Hakkı © 2023 Renkli Site</p>
-    </div>
-  </footer>
-
+    <button class="button red">Kırmızı</button>
+    <button class="button blue">Mavi</button>
+    <button class="button green">Yeşil</button>
 </body>
 </html>
