@@ -1,57 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Programmer Website</title>
+	<title>Download Button</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+		h1 {
+			font-size: 36px;
+			margin-top: 50px;
+		}
+		button {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 5px;
+		}
+		button:hover {
+			background-color: #3e8e41;
+		}
+		input[type="file"] {
+			display: none;
+		}
+		.custom-file-upload {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 5px;
+		}
+		.custom-file-upload:hover {
+			background-color: #3e8e41;
+		}
+	</style>
 </head>
 <body>
-<header>
-<nav>
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="#">Portfolio</a></li>
-<li><a href="#">Blog</a></li>
-<li><a href="#">Contact</a></li>
-</ul>
-</nav>
-<div class="hero">
-<h1>Welcome to My Website</h1>
-<p>This is my programmer website. I use it to showcase my skills and projects.</p>
-<a href="#" class="btn">Hire Me</a>
-</div>
-</header>
-<main>
-<section class="services">
-<h2>Services</h2>
-<p>Here are some of the services I offer:</p>
-<ul>
-<li>Web Development</li>
-<li>Graphic Design</li>
-<li>SEO Optimization</li>
-<li>Content Writing</li>
-</ul>
-</section>
-<section class="portfolio">
-<h2>Portfolio</h2>
-<p>Here are some of my recent projects:</p>
-<ul>
-<li>
-<a href="#">Project 1</a>
-<img src="project1.jpg" alt="Project 1">
-</li>
-<li>
-<a href="#">Project 2</a>
-<img src="project2.jpg" alt="Project 2">
-</li>
-<li>
-<a href="#">Project 3</a>
-<img src="project3.jpg" alt="Project 3">
-</li>
-</ul>
-</section>
-<section class="blog">
-<h2>Blog</h2>
-<p>Check out my latest blog posts:</p
+	<h1>Download Button</h1>
+	<button class="custom-file-upload" id="fileUpload">Upload File</button>
+	<input type="file" id="fileInput" name="fileInput[]" multiple/>
+	<script>
+		const fileUpload = document.getElementById("fileUpload");
+		const fileInput = document.getElementById("fileInput
