@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Colorful X</title>
+  <title>Üç Butonlu Site</title>
   <style>
-    body {
-      background-color: black;
-      text-align: center;
-      color: white;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px;
     }
-    
+
     .button {
-      background-color: red;
+      width: 100px;
+      height: 40px;
+      border: none;
       color: white;
-      border-radius: 8px;
-      padding: 10px 20px;
       font-size: 16px;
-      margin: 10px;
+      cursor: pointer;
+    }
+
+    .button1 {
+      background-color: #04AA6D; /* Yeşil arkaplan */
+    }
+
+    .button2 {
+      background-color: #008CBA; /* Mavi arkaplan */
+    }
+
+    .button3 {
+      background-color: #f44336; /* Kırmızı arkaplan */
+    }
+
+    .button:hover {
+      opacity: 0.8; /* Fareyle üzerine gelince soluklaşsın */
     }
   </style>
 </head>
 <body>
-  <h1>Colorful X</h1>
-  <p>The options you may choose</p>
-  <button class="button">About us</button>
-  <button class="button">Download</button>
-  <button class="button">Play Game</button>
+  <div class="container">
+    <button class="button button1">Buton 1</button>
+    <button class="button button2">Buton 2</button>
+    <button class="button button3">Buton 3</button>
+  </div>
 </body>
 </html>
